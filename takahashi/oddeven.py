@@ -5,8 +5,6 @@ args = sys.argv
 number = int(args[1])
 #判定
 if number % 2 == 1:
-    print("奇数です")
+    print("奇数", end="")
 else:
-    print("偶数です", end="")
-
-    
+    print("偶数", end="")
