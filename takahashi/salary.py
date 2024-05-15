@@ -19,6 +19,4 @@ else:
 #支給額の計算
 pay_amount = salary - tax
 #結果の表示
-print("支給額:", pay_amount, "、税額", tax)
-
-
+print("支給額" + str(pay_amount) + "、税額:" + str(tax), end="")

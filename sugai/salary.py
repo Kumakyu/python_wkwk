@@ -14,17 +14,17 @@ surplus_minutes = 0
 salary = int(args[1])
 
 #給与に応じた条件分岐
-if salary < 1000000:
+if salary > 1000000:
     surplus_minutes = salary - 1000000
-    tax = 1000000*tax_rate + a*tax_rate2
+    tax = 1000000*tax_rate + surplus_minutes*tax_rate2
     tax = Decimal(str(tax)).quantize(Decimal("0"), rounding=ROUND_HALF_UP)
     pay_amount = salary - tax 
-    print("支給額:" + str(pay_amount)+ "、税額:" + str(tax))
+    print("支給額:" + str(pay_amount)+ "、税額:" + str(tax), end="")
 else:
     tax = salary * tax_rate
     tax = Decimal(str(tax)).quantize(Decimal("0"), rounding=ROUND_HALF_UP)
     pay_amount = salary -tax
-    print("支給額:" + str(pay_amount)+"、税額:" + str(tax))
+    print("支給額:" + str(pay_amount)+"、税額:" + str(tax), end="")
 
 
 

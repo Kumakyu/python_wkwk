@@ -9,11 +9,10 @@ sum = 0
 #繰り返しの始まり
 while True:
     if sum < 100:
-        sum = sum + number
-        continue
+        sum += number
     elif sum == 100:
-        print("Just!")
+        print("Just 100!")
         break
-    elif sum > 100:
+    else:
         print("Over!") 
         break
