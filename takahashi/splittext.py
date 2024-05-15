@@ -10,7 +10,7 @@ sentence = args[1]
 num = int(args[2])
 
 #指定したn番目の単語
-word = sentence.split()
+splited = sentence.split()
 
 #結果の表示
-print(word[num])
+print(splited[num -1])
