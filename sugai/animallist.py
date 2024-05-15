@@ -11,12 +11,12 @@ input_animal = str(args[2])
 
 #指定したインデックス位置に指定した動物名を挿入
 list.insert(input_num, input_animal)
-print(list)
+print(list, end="")
 
 #listの一番後ろの要素を削除
 del list[-1]
-print(list)
+print(list, end="")
 
 #listを昇順に並び替え
 list.sort()
-print(list)
+print(list, end="")
