@@ -10,11 +10,11 @@ while True:
     #足し算の結果が100以上になるまで継続
     if sum < 100:
         sum = sum + num
-        print(sum)
+        #print(sum)
         continue
     elif sum == 100:
         print("Just 100", end="")
         break
     elif sum > 100:
-        print("Over!")
+        print("Over!", end="")
         break
