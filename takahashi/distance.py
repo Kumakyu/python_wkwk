@@ -12,7 +12,7 @@ station1 = args[1]
 station2 = args[2]
 
 #駅間の距離の計算
-distance = abs(station_distance[station1] - station_distance[station2])
+distance = round(abs(station_distance[station1] - station_distance[station2]),2)
 
 #結果の表示
-print(distance)
+print(distance, end="")
