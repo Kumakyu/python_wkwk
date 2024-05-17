@@ -13,4 +13,4 @@ num = int(args[2])
 splited = sentence.split()
 
 #結果の表示
-print(splited[num -1])
+print(splited[num -1], end="")
