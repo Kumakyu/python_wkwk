@@ -27,3 +27,18 @@ elif hm_class == "麺類":
     for item in noodles:
         hinmoku[item] = max(hinmoku[item] - price_down, 1)
     print(hinmoku,end="")
+
+# 龍樹のコード
+# if hm_class == "果物類":
+#     kind = fruits
+# elif hm_class == "酒類":
+#     kind = alcohol
+# elif hm_class == "麺類":
+#     kind = noodles
+ 
+# for item in kind:
+#     hinmoku[item] -= price_down
+#     if hinmoku[item] < 1:
+#         hinmoku[item] = 1
+ 
+# print(hinmoku, end="")
