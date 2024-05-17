@@ -17,4 +17,4 @@ try:
     #結果の表示
     print(distance, end="")
 except:
-    print("のぞみの停車駅を引数に設定してください")
+    print("のぞみの停車駅を引数に設定してください", end="")
