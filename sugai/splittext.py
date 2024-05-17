@@ -6,4 +6,4 @@ input_statement = str(args[1])
 input_num = int(args[2])
 
 words = input_statement.split()
-print(words[input_num])
+print(words[input_num - 1], end="")
