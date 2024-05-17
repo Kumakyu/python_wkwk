@@ -9,4 +9,4 @@ input_station1 = str(args[1])
 input_station2 = str(args[2])
 
 #入力した2つの駅間の距離を表示
-print(abs(float(distance[input_station1]) - float(distance[input_station2])))
+print(round(abs(distance[input_station1] - distance[input_station2]), 2), end="")
