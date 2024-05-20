@@ -9,6 +9,6 @@ age= str(args[2])
 #取り込む
 from introduce import *
 
-Name = Intro(name,age)
-print(Name.name_out())
-print(Name.age_out())
+intro = Intro(name,age)
+print(intro.name_out())
+print(intro.age_out())
