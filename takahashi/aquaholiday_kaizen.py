@@ -32,3 +32,6 @@ else:
         amount = 2000 * adult + 1200 * child
     else: #祝日
         amount = 2400 * adult + 1500 * child
+        
+# 結果の表示
+print(amount, end="")
