@@ -38,8 +38,11 @@ for holiday_data in holidays_data:
 # データベースへの変更をコミット
 session.commit()
 
+
+"""
 # データを取得する
 holidaylist=session.query(Holiday).all()
 
 for holiday in holidaylist:
     print(holiday.holi_date,holiday.holi_text)
+"""
