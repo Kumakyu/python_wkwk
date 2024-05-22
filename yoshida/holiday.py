@@ -1,8 +1,8 @@
 from datetime import date
 from database import session
-from datetime import date
-from database import session
 from tables import Holiday
+import sys
+args = sys.argv
  
 # 追加する祝日のデータを辞書のリストで定義
 holidays_data = [
@@ -31,9 +31,9 @@ holidays_data = [
 ]
 
 # リスト内の各データに対してHolidayオブジェクトを作成し、データベースに追加
-for holiday_data in holidays_data:
-    holiday = Holiday(**holiday_data)
-    session.add(holiday)
+#for holiday_data in holidays_data:
+#    holiday = Holiday(**holiday_data)
+#    session.add(holiday)
 
 # データベースへの変更をコミット
 session.commit()
