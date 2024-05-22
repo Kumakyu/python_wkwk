@@ -34,3 +34,17 @@ for i in range(0, int(len(cate))):
     max(hinmoku[hm_class][cate[i]] - price_down, 1)
 
 print(hinmoku)
+
+#値下げの処理と結果の表示
+if hm_class == "果物類":
+    for item in fruits:
+        hinmoku[item] = max(hinmoku[item] - price_down, 1)
+    print(hinmoku,end="")
+elif hm_class == "酒類":
+    for item in alcohol:
+        hinmoku[item] = max(hinmoku[item] - price_down, 1)
+    print(hinmoku,end="")
+elif hm_class == "麺類":
+    for item in noodles:
+        hinmoku[item] = max(hinmoku[item] - price_down, 1)
+    print(hinmoku,end="")
