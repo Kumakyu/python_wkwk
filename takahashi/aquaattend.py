@@ -14,7 +14,7 @@ child = int(args[3])
 dt = date(int(args[1][0:4]), int(args[1][4:6]), int(args[1][6:8]))
 
 #連番最大値を取得
-Attendget = session.query(Attendnum).filter_by(entry_date = dt).order_by(Attendnum.seq.desc()).first()
+Attendget = session.query(Attendnum).filter_by(date = dt).order_by(Attendnum.seq.desc()).first()
 
 #取得できた場合は+1、それ以外の場合は1
 if Attendget != None:
@@ -24,7 +24,7 @@ else:
 
 #登録の値を設定
 attendnum = Attendnum(
-    entry_date = dt, 
+    date = dt, 
     seq = seq, 
     adult = adult, 
     child = child
