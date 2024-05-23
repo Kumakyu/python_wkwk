@@ -5,5 +5,5 @@ args = sys.argv
 input = int(args[1])
 
 #入力した回数分繰り返し
-for i in range(1,input + 1):
-    print("ひつじが" ,i,"匹")
+for sheep in range(1,input + 1):
+    print("ひつじが" +str(sheep)+"匹")
